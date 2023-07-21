@@ -9,7 +9,7 @@ export const writableTrSort = writable('');
 export const writableCoinId = writable('');
 export const writablePriceValue = writable('');
 export const currentUser = writable(pb.authStore.model);
-export const siteDomain = 'fynx.cc'; //서브도메인 적용시 로직 추가할것
+export const siteDomain = 'fynx.cc'; //서브도메인 적용시 로직 추가할것...
 pb.autoCancellation(false);
 export const getSiteInfo = async (fld?: string) => {
 	const site = await pb.collection('sites').getFirstListItem('domain="' + siteDomain + '"');
