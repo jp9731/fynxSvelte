@@ -1,0 +1,37 @@
+.d-none {
+	display: none;
+}
+@media (max-width: 499.98px) {
+	._flex-column {
+		flex-direction: column;
+	}
+}
+
+@-webkit-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.blink {
+	-webkit-animation: blink 1.5s infinite;
+	animation: blink 1.5s infinite;
+}
